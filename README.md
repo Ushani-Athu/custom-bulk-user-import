@@ -3,6 +3,7 @@
 
 
 Custom Bulk User Import Tool Documentation
+
 This tool is designed to facilitate the bulk import of users into WSO2 Identity Server 7.0. It supports both primary and secondary user stores and can be used in the super tenant or any other tenant. The tool reads user data from CSV files and imports users into the configured user store. It also generates two CSV files: one for successful user imports and another for failed user imports.
 Note: Before using this tool in production, test it with a small set of users in a lower environment to ensure the complete flow works as expected.  We have locally tested with one million users, and the time taken was 3,697,311 ms is approximately 61.62 minutes. However, this depends on the environment, so it is recommended to execute the process in a lower environment first to assess performance before running it in production.
 
