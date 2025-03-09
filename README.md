@@ -19,7 +19,7 @@ Note: Before using this tool in production, test it with a small set of users in
 The config.properties file should contain the following key-value pairs:
 
 
- Tenant and User Domain Configuration
+ ```Tenant and User Domain Configuration
 tenantDomain=carbon.super
 userDomain=SECONDARY
 
@@ -28,6 +28,7 @@ userDomain=SECONDARY
 csvFilePath=./repository/resources/identity/users/
 PropertiesFilePath=./repository/conf/
 outputDirectory=./repository/conf/
+```
 
 
 Explanation:
@@ -50,14 +51,18 @@ Configurations can be changed according to your requirements.
 The CSV file should follow the format below:
 
 
-UserName,Password,<claim_url_01>,<claim_url_02>,...,<claim_url_n>
+```UserName,Password,<claim_url_01>,<claim_url_02>,...,<claim_url_n>
 <username_value>,<password_value>,<claim_value_01>,<claim_value_02>,...,<claim_value_n>
+```
 
 
 Example CSV File:
+
+```
 UserName,Password,http://wso2.org/claims/givenname,http://wso2.org/claims/lastname,http://wso2.org/claims/customClaim1
 user1,password,John,Doe,value1
 user2,password,Jane,Smith,value2
+```
 
 
 3. Deploying the Custom OSGi Component
