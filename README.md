@@ -17,12 +17,12 @@ Note: Before using this tool in production, test it with a small set of users in
 The config.properties file should contain the following key-value pairs:
 
 
-# Tenant and User Domain Configuration
+ Tenant and User Domain Configuration
 tenantDomain=carbon.super
 userDomain=SECONDARY
 
 
-# File Paths
+ File Paths
 csvFilePath=./repository/resources/identity/users/
 PropertiesFilePath=./repository/conf/
 outputDirectory=./repository/conf/
@@ -83,40 +83,6 @@ These files are saved in the directory specified by the outputDirectory property
 
 
 
-
-5. Important Notes
-
-
-1. Test in a Lower Environment:
-   - Test the tool with a few users in a lower environment before using it in production.
-
-
-2. Duplicate Records:
-   - Ensure the CSV file does not contain duplicate records, which may lead to duplicate users in the database.
-
-
-5. Performance Considerations:
-   - The time taken for the bulk import depends on the number of records and the performance of the database.
-
-
-6. Troubleshooting
-6.1. CSV File Not Found
-- Ensure the CSV file is placed in the correct directory
-
-
-6.3. Incorrect Tenant or User Domain
-Ensure the tenantDomain and userDomain properties in the properties file are correctly configured.
-Example 1: Primary User Store of Super Tenant
-tenantDomain=carbon.super
-userDomain=
-
-
-Example 2: Secondary User Store of enant1
-tenantDomain=tenant1.com
-userDomain=SECONDARY
-tenantDomain=tenant1.com
- Conclusion
-This custom bulk user import tool is designed to efficiently provision users into WSO2 Identity Server 7.0 for both primary and secondary user stores in the super tenant or any other tenants. Follow the steps and recommendations provided to ensure a smooth and successful bulk user import process.
 
 
 
