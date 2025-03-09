@@ -9,8 +9,9 @@ Note: Before using this tool in production, test it with a small set of users in
 
 
 1. Configuration Properties File
+
 1.1. File Location
-- Place the bulk.user.properties  file in the following directory:
+- Place the bulk.user.properties file in the following directory:
   <IS_HOME>/repository/conf/
 
 
